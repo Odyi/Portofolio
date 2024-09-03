@@ -1,0 +1,629 @@
+/* Styling for header-seksjonen */
+header {
+    background-color: #f5f5f5;  /* Bakgrunnsfarge */
+    color: white;  /* Tekstfarge */
+    border-bottom: hsl(0, 0%, 0%) 2px solid;  /* Bunnkant med lav metning for en subtil linjeffekt */
+    font-size: 20PX;  /* Tekststørrelse */
+}
+
+/* Overskriftsstil */
+h1 {
+    font-size: 36px;
+}
+
+/* Stil for hovedcontaineren */
+#container {
+    background-color: rgb(0, 0, 0);  /* Bakgrunnsfarge */
+    max-width: 800px;  /* Maks bredde */
+    margin: 114px auto;  /* Avstand fra topp og bunn, sentrert horisontalt */
+    padding: 20px;  /* Padding for innholdet */
+    border-radius: 8px;  /* Avrundede hjørner */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);  /* Svak boks-skyggeeffekt */
+}
+
+/* Stil for h2-elementer */
+h2 {
+    font-size: 24px;
+    color: #959595;
+}
+
+/* Stil for vanlige avsnitt */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+/* Stil for introseksjonen */
+#intro {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+/* Stil for kontaktinformasjonseksjonen */
+#contact-info {
+    padding: 20px;
+    border-radius: 8px;
+    outline: 2px solid black;
+}
+
+/* Lenkestil */
+a {
+    text-decoration: none;
+    color: cyan;
+}
+
+/* Hover-effekt for lenker */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stil for navigasjonsmenyen */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stil for navigasjonslogoen */
+.nav-logo {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+}
+
+/* Stil for navigasjonsmenyen */
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+/* Stil for navigasjonselementer */
+.nav-item {
+    margin-right: 20px;
+    gap: 30px;
+    position: relative;
+}
+
+/* Lenkestil for navigasjonselementer */
+.nav-item a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: color 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Spesifikke hover-effekter for hvert navigasjonselement */
+.nav-item:nth-child(1) a:hover {
+    color: #02ae7d;
+}
+
+.nav-item:nth-child(2) a:hover {
+    color: rgb(255, 117, 117);
+}
+
+.nav-item:nth-child(3) a:hover {
+    color: rgb(252, 255, 95);
+}
+
+.nav-item:nth-child(4) a:hover {
+    color: #8f5fff;
+}
+
+/* Hover-effekt for lenker med underline-effekt */
+.nav-item a:hover:after {
+    width: 100%;
+}
+
+/* Stil for navigasjonstoggle (mobilvisning) */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Linjestil for navigasjonstoggle */
+.bar {
+    width: 0px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 4px 0;
+}
+
+/* Media query for mobilvisning (maks bredde: 768px) */
+@media (max-width: 768px) {
+    /* Skjul navigasjonsmenyen og vis den som en kolonne ved behov */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    /* Justering av stil for navigasjonselementer på mobilvisning */
+    .nav-item {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    /* Vis navigasjonstoggle på mobilvisning */
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Rotasjonseffekt for å indikere åpen navigasjonstoggle */
+    .nav-toggle.open {
+        transform: rotate(90deg);
+    }
+}
+
+/* Stil for footer-seksjonen */
+.footer {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 30px;
+    margin-top: 270px;
+}
+
+/* Stil for hele body-elementet */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(315deg, #000000, #544e4e);  /* Gradient bakgrunn */
+    color: #ffffff;
+    animation: gradientAnimation 2s ease-in-out infinite;  /* Animasjon for gradientbakgrunn */
+}
+
+/* Gradientanimasjon */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Spesifikke stiler for #intro-seksjonen */
+#intro {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background-color: #332525;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Hover-effekt for #intro-seksjonen med puls-glow-animasjon */
+#intro:hover {
+    animation: pulseGlow 2s infinite;
+}
+
+/* Puls-glow-animasjon */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+    }
+}
+
+/* Spesifikke stiler for #contact-info-seksjonen */
+#contact-info {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background-color: #332525;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Hover-effekt for #contact-info-seksjonen med puls-glow-animasjon */
+#contact-info:hover {
+    animation: pulseGlow 2s infinite;
+}
+
+/* Stil for body-elementet */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styling for header-seksjonen */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    height: 80px;
+}
+
+/* Styling for hero-seksjonen */
+.hero-section {
+    position: relative;
+}
+
+/* Stil for video i hero-seksjonen */
+.hero-section img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-size: cover;
+}
+
+/* Stil for kontakt-sideelementer */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Stil for kontakt-kort */
+.contact-card {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+    margin: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover-effekt for kontakt-kort */
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+/* Stil for bilde i kontakt-kortet */
+.contact-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Stil for innhold i kontakt-kortet */
+.contact-card .card-content {
+    padding: 20px;
+    
+}
+
+/* Stil for overskrift i kontakt-kortet */
+.contact-card h2 {
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 1000;
+}
+
+
+/* Stil for tekst i kontakt-kortet */
+.contact-card p {
+    margin: 5px 0;
+    color: #444444;
+}
+
+/* Styling for headercontact-seksjonen */
+.headercontact {
+    background-color: #f0f0f0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling for navbarcontact-seksjonen */
+.navbarcontact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for sticky-header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #202020;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+/* Styling for nav-logo */
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: -20px;
+}
+
+/* Styling for nav-menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+/* Styling for nav-item */
+.nav-item {
+    margin-right: 20px;
+}
+
+/* Styling for lenker i nav-item */
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+/* Styling for navigasjonstoggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Linjestil for navigasjonstoggle */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Skjul navigasjonsmenyen og vis den som en kolonne ved behov på mobilvisning */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    /* Justering av stil for navigasjonselementer på mobilvisning */
+    .nav-item {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    /* Vis navigasjonstoggle på mobilvisning */
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Rotasjonseffekt for å indikere åpen navigasjonstoggle på mobilvisning */
+    .nav-toggle.open {
+        transform: rotate(90deg);
+    }
+}
+
+/* Generelle stiler for innholdet */
+* {
+    box-sizing: border-box;
+}
+
+/* Generell stilkoding for body-elementet */
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Sentrering av nettsiden */
+.porto {
+    max-width: 10000px;
+    margin: auto;
+}
+
+/* Overskriftsstil */
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+/* Stil for rader */
+.row {
+    margin: 8px -16px;
+}
+
+/* Legg til padding mellom hver kolonne */
+.row,
+.row > .column {
+    padding: 25px;
+}
+
+/* Opprett tre like kolonner ved siden av hverandre */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Skjul kolonnene som standard */
+}
+
+/* Nullstill floats etter rader */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Stil for innholdet som kan vises/ikke vises */
+.content:hover {
+    background-color: rgb(71, 70, 70);
+}
+
+/* Generell stilstyring for innholdet */
+.content {
+    background-color: #202020;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+/* Viser elementene som har klassen "show" */
+.show {
+    display: block;
+  }
+  
+  /* Stiler for knappene */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Legger til grå bakgrunnsfarge ved musehover */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Legger til mørk bakgrunnsfarge på aktiv knapp */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+  
+  /* Generelle stiler for hele nettsiden */
+  body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  /* Stiler for overskriften/header-seksjonen */
+  header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+  }
+  
+  /* Stiler for seksjonen med prosjekter */
+  section#projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+  }
+  
+  /* Stiler for hvert prosjekt i seksjonen */
+  article.project {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Endrer størrelsen på et prosjekt ved hover */
+  article.project:hover {
+      transform: scale(1.05);
+  }
+  
+  /* Stiler for overskriften i hvert prosjekt */
+  article.project h2 {
+      color: #333;
+  }
+  
+  /* Stiler for teksten i hvert prosjekt */
+  article.project p {
+      color: #666;
+  }
+  
+  /* Stiler for lenken i hvert prosjekt */
+  article.project a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Endrer bakgrunnsfargen på lenken ved hover */
+  article.project a:hover {
+      background-color: #555;
+  }
+  
+  /* Stiler for footer-seksjonen */
+  footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  /* Stiler for overskriften h4 i en rad */
+  .row h4 {
+      color: rgb(179, 179, 179);
+  }
+  
+  .parallax {
+    background-image: url("/Medier/BilderPhotoshop/odymultiverse.png");
+    
+   /* høyde på bilde */
+    min-height: 500px;
+    margin-top: 400px;
+ 
+    /* paralax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #odysompekker{
+   float: right; 
+   margin-top: 15%;
+   width: 25%;
+
+  }
+  

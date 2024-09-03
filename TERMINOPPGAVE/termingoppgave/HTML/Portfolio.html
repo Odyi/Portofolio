@@ -1,0 +1,138 @@
+<!-- Lagret som portfolio.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Innstillinger for optimal opplevelse -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lenke til stilig stil -->
+    <link rel="stylesheet" href="/termingoppgave/CSS/style.css">
+    <link rel="icon" href="/termingoppgave/Medier/Logoer/logoody.svg">
+    <!-- Tittel på siden -->
+    <title>Your Page Title</title>
+</head>
+
+<body class="porto">
+
+    <!-- Navigasjon -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <!-- Fabelaktig logo -->
+            <div class="nav-logo"><a href="/termingoppgave/index.html"><img src="/termingoppgave/Medier/Logoer/logoody.svg" alt="O"></a></div>
+            <!-- Navigasjonsknapper -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/termingoppgave/index.html">About</a></li>
+                <li class="nav-item"><a href="/termingoppgave/HTML/Portfolio.html">Portofolio</a></li>
+                <li class="nav-item"><a href="/termingoppgave/HTML/Projects.html">Prosjekter</a></li>
+                <li class="nav-item"><a href="/termingoppgave/HTML/contact.html">Contact me</a></li>
+            </ul>
+            <!-- Hemmelig knapp -->
+            <div class="nav-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+   
+    <h2>PORTFOLIO</h2>
+    <!-- Stilige knapper som bruker javascrip! -->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('Photoshop')"> Photoshop</button>
+      <button class="btn" onclick="filterSelection('Illustrator')"> Illustrator</button>
+      <button class="btn" onclick="filterSelection('Manuals')"> Manuals</button>
+    </div>
+    
+    <!-- Her kommer den kule porteføljen -->
+    <div class="row">
+      <!-- kule bilder og forklaringer -->
+      <div class="column Photoshop">
+        <div class="content">
+          <img src="/termingoppgave/Medier/BilderPhotoshop/odyryancopy.jpg" alt="Ryangoslingody" style="width:100%">
+          <h4>Bladerunner 2049</h4>
+          <p>Me as Ryan Gosling in the popular film Bladerunner 2049</p>
+        </div>
+      </div>
+      <!-- Hvem trenger cosplay når du har Photoshop? -->
+      <div class="column Photoshop">
+        <div class="content">
+          <img src="/termingoppgave/Medier/BilderPhotoshop/ONEPIECEODYWANTED - Copy.jpg" alt="Onepieceody" alt="Lights" style="width:100%">
+          <h4>One piece</h4>
+          <p>Me as a part of the Straw hat pirate crew from the popular anime and manga One piece</p>
+        </div>
+      </div>
+      <!-- Bevis på at jeg kan være gresk mytologi i moderne tider -->
+      <div class="column Photoshop">
+        <div class="content">
+          <img src="/termingoppgave/Medier/BilderPhotoshop/sysiphusodycopyCopy.jpg" alt="sysiphusody" alt="Nature" style="width:100%">
+          <h4>Sysiphus</h4>
+          <p>Me as the ancient mythological person Sysiphus</p>
+        </div>
+      </div>
+    
+      <!-- Illustrator-seksjonen -->
+      <div class="column Illustrator">
+        <div class="content">
+          <img src="/termingoppgave/Medier/BilderIllustrator/dark souls illustrator.svg" alt="Dark Souls" style="width:80%">
+          <h4>Dark souls</h4>
+          <p>Cool illustration i made from scratch for the popular franchise and game Dark Souls</p>
+        </div>
+      </div>
+      <!-- Engelsk oppgave nintedo timeline -->
+      <div class="column Illustrator">
+        <div class="content">
+          <img src="/termingoppgave/Medier/BilderIllustrator/infographicnintedo.svg" alt="Nintedo" style="width:80%">
+          <h4>English work</h4>
+          <p>Nintedo-Timeline i made for English Class</p>
+        </div>
+      </div>
+      <!-- Jojo, det er ikke bare en navnelyd, det er kunst -->
+      <div class="column Illustrator">
+        <div class="content">
+          <img src="/termingoppgave/Medier/BilderIllustrator/jojo.svg" alt="Jojo" style="width:100%">
+          <h4>Jojo</h4>
+          <p>Art and illustration i made for the popular Anime and Manga Jojos Bizzare Adventure</p>
+        </div>
+      </div>
+    
+      <!-- Manual-seksjonen: for de som liker å lese hvordan ting fungerer -->
+      <div class="column Manuals">
+        <div class="content">
+          <img src="/termingoppgave/DesignmanualOgISS/ISSMANUAL.png" alt="Manual for ISS" style="width:100%">
+          <h4>Manual</h4>
+          <p>Iss manual that explains how to host a webserver and how to work a router.</p>
+        </div>
+      </div>
+      <!-- Designmanualen  -->
+      <div class="column Manuals">
+        <div class="content">
+          <img src="/termingoppgave/DesignmanualOgISS/designmanualbilde.png" alt="People" style="width:100%">
+          <h4>Design Manual</h4>
+          <p>A design manual explaning how i made the website and why i made the choices i made for it.</p>
+        </div>
+      </div>
+      <!-- Skisser for de som vil se prosessen bak koden -->
+      <div class="column Manuals">
+        <div class="content">
+          <img src="/termingoppgave/Skisser/AdobeXdSkisse.png" alt="People" style="width:100%">
+          <h4>Sketches</h4>
+          <p>Som sketches at the start of working with this project</p>
+        </div>
+      </div>
+    <!-- SLUTT PÅ RUTENE -->
+    </div> 
+    <!-- Footer: for de siste, men ikke minst, øyeblikkene -->
+    <div class="footer">
+        <footer>Tlf: (+47) 980 86 374</footer>
+        <footer> Gmail: odysseas.gaki@gmail.com</footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/termingoppgave/JAVA SCRIPT/java.js"></script>
+</body>
+
+</html>
